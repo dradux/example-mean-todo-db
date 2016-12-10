@@ -1,5 +1,5 @@
 ---
-# example comment used to trigger builds: v3.
+# example comment used to trigger builds: v0.
 builds:
   docker_image_name: FreeLunchCI/example-mean-todo-db
 
@@ -8,11 +8,11 @@ outputs:
   - type: ecr
     image: FreeLunchCI/example-mean-todo-db
     registry: 703587889398.dkr.ecr.us-east-1.amazonaws.com
-    repository: example-mean-todo
+    repository: example-mean-todo-db
     ecr_key: ${aws_access_key_id}
     ecr_secret: ${aws_secret_access_key}
     region: us-east-1
-    tag: latestdb
+    tag: base
 
   - type: kube
     server: https://50.16.94.175
