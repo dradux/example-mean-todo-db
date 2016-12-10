@@ -12,7 +12,7 @@ outputs:
     ecr_key: ${aws_access_key_id}
     ecr_secret: ${aws_secret_access_key}
     region: us-east-1
-    tag: latest
+    tag: latestdb
 
   - type: kube
     server: https://50.16.94.175
