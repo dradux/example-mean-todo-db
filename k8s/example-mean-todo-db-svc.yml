@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: example-mean-todo-db-elb
+  labels:
+    app: example-mean-todo-db
+spec:
+  type: LoadBalancer
+  ports:
+  - name: http
+    port: 27017
+    targetPort: 27017
+  selector:
+    app: example-mean-todo-db
