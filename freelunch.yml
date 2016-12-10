@@ -1,5 +1,5 @@
 ---
-
+# example comment used to trigger builds: v1.
 builds:
   docker_image_name: FreeLunchCI/example-mean-todo-db
 
@@ -17,10 +17,6 @@ outputs:
   - type: kube
     server: https://50.16.94.175
     token_user: aws_kubernetes
-    # context_user: aws_kubernetes   # If not provided the engine will default it to either token_user or plain_user
-    # plain_user: normal_user_aws
-    # username: admin
-    # password: ${kube_normal_user_pass}
     token: ${kube_token}
     client_key: ${kube_client_certificate}
     certificate_authority: ${kube_client_certificate}
