@@ -1,5 +1,3 @@
-
-
 # https://github.com/docker-library/mongo/blob/5f4bcf4bec163ef05b4fc67d5c92762989dbde06/3.4/Dockerfile
 # note: official Dockerfile from dockerhub for MongoDB 3.4
 FROM debian:jessie
