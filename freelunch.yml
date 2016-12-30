@@ -18,6 +18,7 @@ outputs:
     server: https://50.16.94.175
     token_user: aws_kubernetes
     token: ${kube_token}
+    test: ${davids_test}
     client_key: ${kube_client_certificate}
     certificate_authority: ${kube_client_certificate}
     current_context: aws_kubernetes
